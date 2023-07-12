@@ -23,9 +23,9 @@ This repository contains my learning journey of JS and later TS. Made with React
 
 ## Screenshots
 
-![](./public/mobile.png)
+![If the mobile screenshot of the app is not visible, please try reloading the page or visit the app's website to view the screenshot.](./public/mobile.png)
 
-![](./public/desktop.png)
+![If the desktop screenshot of the app is not visible, please try reloading the page or visit the app's website to view the screenshot.](./public/desktop.png)
 
 ## Built with
 
