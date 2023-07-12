@@ -42,4 +42,7 @@
     var thisIsBlockScoped: string = "Blocks!";
   }
   console.log(thisIsBlockScoped);
+
+  console.log(hoistingExample);
+  var hoistingExample = 3;
 }
