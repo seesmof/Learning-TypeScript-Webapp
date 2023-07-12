@@ -10,3 +10,6 @@
 
   Main();
 }
+{
+  const Früh = "Fröhling";
+}
