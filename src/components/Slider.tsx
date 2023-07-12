@@ -19,7 +19,7 @@ const Slider: React.FC = () => {
   };
 
   return (
-    <div className="">
+    <>
       <div className="flex flex-row gap-3 flex-nowrap whitespace-nowrap overflow-x-auto pb-2 p-4">
         {sectionNames.map((sectionName) => (
           <div
@@ -41,7 +41,7 @@ const Slider: React.FC = () => {
           <div className="mt-2">{renderSection(activeSection)}</div>
         )}
       </main>
-    </div>
+    </>
   );
 };
 
