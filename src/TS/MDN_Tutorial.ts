@@ -12,4 +12,23 @@
 }
 {
   const Früh = "Fröhling";
+
+  //   a one line comment
+  /*
+   * a multi line comment
+   */
+  //   cannot nest multiline comments
+
+  var x = 42;
+  let y = 13;
+
+  let x;
+  console.log(x);
+
+  const three: number = 3;
+  const pi: number = 3.14;
+  const e: number = 2.71;
+  const euler: number = 2.71;
+  console.log(`pi: ${pi}\ne: ${e}\neuler: ${euler}\nthree: ${three}`);
+  //   const x; == error
 }
