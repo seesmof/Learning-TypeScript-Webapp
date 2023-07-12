@@ -1,5 +1,12 @@
-const firstName: string = "John";
-const lastName: string = "Doe";
-const fullName: string = `${firstName} ${lastName}`;
+const func = () => {
+  "use strict";
 
-console.log(`${fullName} is a great person!`);
+  const greetMe = (yourName: string) => {
+    alert(`Hello ${yourName}`);
+    return yourName;
+  };
+
+  greetMe("John");
+};
+
+export default func;
