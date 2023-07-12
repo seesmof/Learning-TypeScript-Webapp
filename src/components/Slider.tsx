@@ -20,7 +20,9 @@ const Slider: React.FC = () => {
 
   return (
     <>
-      <div className="flex flex-row gap-3 flex-nowrap whitespace-nowrap overflow-x-auto pb-2 p-4">
+      <div className="flex flex-row gap-3 items-center flex-nowrap whitespace-nowrap overflow-x-auto pb-2 p-4">
+        <img src="/logo.svg" alt="" className="w-10 -ml-1" />
+
         {sectionNames.map((sectionName) => (
           <div
             key={sectionName}
