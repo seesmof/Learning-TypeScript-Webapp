@@ -31,4 +31,15 @@
   const euler: number = 2.71;
   console.log(`pi: ${pi}\ne: ${e}\neuler: ${euler}\nthree: ${three}`);
   //   const x; == error
+
+  let letUsSee: number = 0;
+  if (Math.random() < 0.5) {
+    letUsSee = 42;
+  }
+  console.log(letUsSee);
+
+  if (true) {
+    var thisIsBlockScoped: string = "Blocks!";
+  }
+  console.log(thisIsBlockScoped);
 }
