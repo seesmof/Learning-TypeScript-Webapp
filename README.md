@@ -1,2 +1,0 @@
-# typescript hello world
- 
