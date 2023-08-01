@@ -19,3 +19,33 @@ sum(1, 2);
 const func = (user: { username: string; age: number; phone?: string }) => {
   console.log(user.username);
 };
+
+type UserType = {
+  username: string;
+  age: number;
+  phone?: string;
+};
+
+const betterOne = (user: UserType) => {
+  console.log(user.username);
+};
+
+type MyFunc = (a: number, b: string) => void;
+
+const write: MyFunc = (a, b) => {
+  console.log(`${a} times ${b}`);
+};
+
+type UserTwo = {
+  username: string;
+  age: number;
+  phone?: string;
+  theme: "dark" | "light";
+};
+
+const userTwo: UserTwo = {
+  username: "abc",
+  age: 1,
+  phone: "123",
+  theme: "light",
+};
