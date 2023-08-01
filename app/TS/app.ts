@@ -1,12 +1,11 @@
-let age: number;
-age = 10;
+let names = ["John", "Jane", "Bob"];
+names.push("Tom");
 
-let string: string;
-string = "hello";
+let numbers = [1, 2, 3];
+numbers.push(4);
 
-let boolean: boolean;
-boolean = true;
+let stringArr: string[];
+stringArr = ["one", "two", "three"];
 
-let test: string | number;
-test = "hello";
-test = 21;
+let numArr: number[];
+numArr = [1, 2, 3];
