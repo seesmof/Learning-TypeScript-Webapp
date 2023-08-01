@@ -1,9 +1,12 @@
-let test;
+const sayHi = () => {
+  console.log("hi");
+};
 
-test = 12;
-test = "121";
-test = true;
-test = [test];
+const returnString = (): string => {
+  console.log("hi");
+  return "hi";
+};
 
-let testAnyArr: any[];
-testAnyArr = [1, "tw", true];
+const mult = (num: number): number => {
+  return num * 2;
+};
