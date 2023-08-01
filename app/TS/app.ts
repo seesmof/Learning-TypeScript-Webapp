@@ -1,14 +1,21 @@
-let names = ["John", "Jane", "Bob"];
-names.push("Tom");
+let user = {
+  username: "John",
+  age: 22,
+  isAdmin: false,
+};
+user.username = "Jane";
+user.age = 23;
+user.isAdmin = true;
+console.log(user);
 
-let numbers = [1, 2, 3];
-numbers.push(4);
+let userObj: {
+  username: string;
+  age: number;
+  isAdmin: boolean;
+};
 
-let stringArr: string[];
-stringArr = ["one", "two", "three"];
-
-let numArr: number[];
-numArr = [1, 2, 3];
-
-let testArr: (string | number)[];
-testArr = ["one", "two", "three", 21, 532, 643];
+userObj = {
+  username: "John",
+  age: 22,
+  isAdmin: false,
+};
