@@ -1,76 +1,57 @@
-const sayHi = () => {
-  console.log("hi");
-};
-
-const returnString = (): string => {
-  console.log("hi");
-  return "hi";
-};
-
-const mult = (num: number): number => {
-  return num * 2;
-};
-
-const sum = (num1: number, num2: number, num3?: number): number => {
-  return num1 + num2;
-};
-sum(1, 2);
-
-const func = (user: { username: string; age: number; phone?: string }) => {
-  console.log(user.username);
-};
-
-type UserType = {
+interface IAuthor {
+  id: number;
   username: string;
-  age: number;
-  phone?: string;
-};
-
-const betterOne = (user: UserType) => {
-  console.log(user.username);
-};
-
-type MyFunc = (a: number, b: string) => void;
-
-const write: MyFunc = (a, b) => {
-  console.log(`${a} times ${b}`);
-};
-
-type UserTwo = {
-  username: string;
-  age: number;
-  phone?: string;
-  theme: "dark" | "light";
-};
-
-const userTwo: UserTwo = {
-  username: "abc",
-  age: 1,
-  phone: "123",
-  theme: "light",
-};
-
-interface IUser {
-  username: string;
-  email: string;
-  age: number;
 }
 
-interface IEmployee extends IUser {
-  employeeId: number;
+interface ICategory {
+  id: number;
+  title: string;
 }
 
-const employee: IEmployee = {
-  username: "John",
-  email: "john@me.com",
-  age: 30,
-  employeeId: 1,
+interface IPost {
+  id: number;
+  title: string;
+  desc: string;
+  extra: IAuthor[] | ICategory[];
+}
+
+interface IPostBetter<T> {
+  id: number;
+  title: string;
+  desc: string;
+  extra: T[];
+}
+
+const testMe: IPostBetter<String> = {
+  id: 1,
+  title: "post title",
+  desc: "post desc lorem ipsum",
+  extra: ["author", "author", "author", "author", "author", "author", "author"],
 };
 
-console.log(employee);
+interface IPostEvenBetter<T extends object> {
+  id: number;
+  title: string;
+  desc: string;
+  extra: T[];
+}
 
-const client: IUser = {
-  username: "John",
-  email: "john@me.com",
-  age: 30,
+const testMe2: IPostEvenBetter<IAuthor> = {
+  id: 1,
+  title: "post title",
+  desc: "post desc lorem ipsum",
+  extra: [
+    { id: 1, username: "John" },
+    { id: 2, username: "Jane" },
+  ],
+};
+
+const testMe3: IPostEvenBetter<ICategory> = {
+  id: 1,
+  title: "post title",
+  desc: "post desc lorem ipsum",
+  extra: [
+    { id: 1, title: "Category 1" },
+    { id: 2, title: "Category 2" },
+  ],
 };
