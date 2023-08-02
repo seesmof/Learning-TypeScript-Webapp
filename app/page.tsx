@@ -10,7 +10,7 @@ export default function Home() {
       </h1>
       <Link href={"/posts"} className="font-medium flex flex-row items-center">
         <FaExternalLinkAlt className="mr-2" />
-        Fetching Data from <span className="text-blue-600">API</span>
+        Fetching Data from <span className="text-blue-600 ml-1">API</span>
       </Link>
     </div>
   );
