@@ -1,17 +1,20 @@
 import React from "react";
 import Link from "next/link";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import List from "@/components/post/List";
+import Parent from "@/components/children/Parent";
+import Child from "@/components/children/Child";
 import MainContainer from "@/components/MainContainer";
 
-const Posts = () => {
+const Children = () => {
   return (
     <>
       <MainContainer>
-        <List />
+        <Parent>
+          <Child />
+        </Parent>
       </MainContainer>
     </>
   );
 };
 
-export default Posts;
+export default Children;
