@@ -10,8 +10,6 @@ const Form = () => {
   const [username, setUsername] = useState("");
   const [user, setUser] = useState<IUser | null>(null);
 
-  const [isModalShown, setIsModalShown] = useState(false);
-
   const handleUpdateUser = (e: React.ChangeEvent<HTMLInputElement>) => {
     setUsername(e.target.value);
   };
@@ -43,17 +41,9 @@ const Form = () => {
 
       <div className="py-4 flex flex-col gap-2">
         {user ? (
-          <>
-            <h1 className="font-medium text-lg">
-              Hi, <span className="text-blue-600">{user.name}</span>
-            </h1>
-            <button
-              onClick={() => setIsModalShown(true)}
-              className="bg-red-500 hover:bg-red-600 text-white p-1.5 rounded-md"
-            >
-              Delete
-            </button>
-          </>
+          <h1 className="font-medium text-lg">
+            Hi, <span className="text-blue-600">{user.name}</span>
+          </h1>
         ) : (
           <></>
         )}
