@@ -2,7 +2,11 @@ import Link from "next/link";
 import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
-const MainContainer = ({ children }: { children: React.ReactNode }) => {
+interface MainContainerProps {
+  children?: React.ReactNode;
+}
+
+const MainContainer = ({ children }: MainContainerProps) => {
   return (
     <>
       <div className="main-container">
