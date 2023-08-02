@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Card from "./Card";
 import { PostProps } from "@/app/types/types";
 
