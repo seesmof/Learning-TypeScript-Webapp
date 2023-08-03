@@ -12,6 +12,7 @@ export default function Home() {
         <HomeLink href="/childrenExample" text="Children" />
         <HomeLink href="/postsSearch" text="Search" />
         <HomeLink href="/loginForm" text="Login" />
+        <HomeLink href="/reducer" text="useReducer and useContext" />
       </div>
     </MainContainer>
   );
